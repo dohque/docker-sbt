@@ -1,11 +1,11 @@
-FROM netflixoss/java:8
+FROM openjdk:8
 MAINTAINER Ruslan Pilin
 
-ENV SBT_VERSION 0.13.8
+ENV SBT_VERSION 1.1.1
 
-ENV SCALA_VERSION 2.11.6
+ENV SCALA_VERSION 2.12.4
 
-RUN mkdir -p /usr/local/bin && wget -P /usr/local/bin/ http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/$SBT_VERSION/sbt-launch.jar && ls /usr/local/bin
+RUN mkdir -p /usr/local/bin && wget -P /usr/local/bin/ https://dl.bintray.com/sbt/maven-releases/org/scala-sbt/sbt-launch/$SBT_VERSION/sbt-launch.jar && ls /usr/local/bin
 
 COPY sbt /usr/local/bin/
 
