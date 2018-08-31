@@ -1,7 +1,7 @@
-FROM openjdk:8
+FROM openjdk:8-alpine
 MAINTAINER Ruslan Pilin
 
-ENV SBT_VERSION 1.1.5
+ENV SBT_VERSION 1.2.1
 
 ENV SCALA_VERSION 2.12.6
 

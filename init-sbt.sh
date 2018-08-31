@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # a simple test for sbt
 #
@@ -18,4 +18,3 @@ exit
 EOF
 
 sbt about
-

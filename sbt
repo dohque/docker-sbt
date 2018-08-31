@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # sbt launcher script
 #
