@@ -1,9 +1,9 @@
 FROM openjdk:8-alpine
 MAINTAINER Ruslan Pilin
 
-ENV SBT_VERSION 1.2.1
+ENV SBT_VERSION 1.2.4
 
-ENV SCALA_VERSION 2.12.6
+ENV SCALA_VERSION 2.12.7
 
 RUN mkdir -p /usr/local/bin && wget -P /usr/local/bin/ https://dl.bintray.com/sbt/maven-releases/org/scala-sbt/sbt-launch/$SBT_VERSION/sbt-launch.jar && ls /usr/local/bin
 
